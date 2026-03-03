@@ -10,7 +10,6 @@ def process_scores(students):
 def classify_grades(averages):
     classified = {}
 
-    # Local grading thresholds (not global)
     grade_A = 90
     grade_B = 75
     grade_C = 60
@@ -61,4 +60,5 @@ if __name__ == "__main__":
 
     averages = process_scores(students)
     classified = classify_grades(averages)
+
     generate_report(classified)
